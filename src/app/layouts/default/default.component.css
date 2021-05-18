@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-drawer {
+    width: 340px;
+    max-width: 80%;
+}
+
+mat-drawer-container {
+    height: 100%;
+}
+
+.container-main {
+    padding: 1.5rem;
+    min-height: 80%;
+}

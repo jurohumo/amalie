@@ -1,0 +1,15 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header (toggleSideBarMenu)="sideBarToggler()"></app-header>
+
+        <div class="container-main">
+            <router-outlet></router-outlet>
+        </div>
+
+        <app-footer></app-footer>
+    </mat-drawer-content>
+
+</mat-drawer-container>
