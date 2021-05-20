@@ -1,0 +1,39 @@
+.v-centrar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/bg-login.png");
+}
+
+mat-card-title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+mat-card {
+    width: 80%;
+    margin: auto;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+mat-form-field {
+    display: block;
+}
+
+input,
+mat-label {
+    margin-left: 1rem;
+}
+
+.btn-pass {
+    float: right;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+}

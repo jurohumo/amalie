@@ -1,0 +1,94 @@
+<div class="container animated fadeIn">
+    <h2>Registro de Personal</h2>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Tipo de Documento</mat-label>
+        <mat-select>
+            <mat-option value="one">L.E/DNI</mat-option>
+            <mat-option value="two">CARNET EXT</mat-option>
+            <mat-option value="two">RUC</mat-option>
+            <mat-option value="two">PASAPORTE</mat-option>
+            <mat-option value="two">PARTIDA NAC</mat-option>
+            <mat-option value="two">OTROS</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>N° Documento</mat-label>
+        <input matInput maxlength="12" />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Nombres*</mat-label>
+        <input matInput />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Apellido Paterno*</mat-label>
+        <input matInput />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Apellido Materno*</mat-label>
+        <input matInput />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Sexo*</mat-label>
+        <mat-select>
+            <mat-option value="one">MASCULINO</mat-option>
+            <mat-option value="two">FEMENINO</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="padding: 10px">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="pat@example.com" required />
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="padding: 10px">
+        <mat-label>Fecha de Nacimiento</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker [calendarHeaderComponent]="exampleHeader"></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Teléfono</mat-label>
+        <input matInput />
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Seleccione una Opción</mat-label>
+        <mat-select>
+            <mat-option value="one">PERÚ</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Departamento</mat-label>
+        <mat-select>
+            <mat-option value="one">LIMA</mat-option>
+            <mat-option value="two">CALLAO</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Provincia</mat-label>
+        <mat-select>
+            <mat-option value="one">LIMA</mat-option>
+            <mat-option value="two">CALLAO</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px">
+        <mat-label>Distrito</mat-label>
+        <mat-select>
+            <mat-option value="one">SAN ISIDRO</mat-option>
+            <mat-option value="two">SAN MIGUEL</mat-option>
+            <mat-option value="tree">LA PERLA</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="m-5" style="padding: 10px; width: 38%">
+        <mat-label>Dirección</mat-label>
+        <input matInput />
+    </mat-form-field>
+
+    <div style="padding: 10px">
+        <a href="">
+            <button mat-raised-button color="warn">
+        Guardar<img
+          style="width: 15px; padding: 5px"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggZD0iTTQ5My4yNTQsNzcuMjU1bC01OC41MDgtNTguNTFDNDIyLjc0Miw2Ljc0Miw0MDYuNDY1LDAsMzg5LjQ5LDBIMzUydjExMmMwLDguODM2LTcuMTY0LDE2LTE2LDE2SDgwICAgYy04LjgzNiwwLTE2LTcuMTY0LTE2LTE2VjBIMzJDMTQuMzI4LDAsMCwxNC4zMjYsMCwzMnY0NDhjMCwxNy42NzMsMTQuMzI4LDMyLDMyLDMyaDQ0OGMxNy42NzIsMCwzMi0xNC4zMjcsMzItMzJWMTIyLjUxICAgQzUxMiwxMDUuNTM1LDUwNS4yNTgsODkuMjU3LDQ5My4yNTQsNzcuMjU1eiBNNDQ4LDQ0OEg2NFYyNTZoMzg0VjQ0OHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTxyZWN0IHg9IjIyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9Ijk2IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3JlY3Q+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg=="
+        />
+      </button>
+        </a>
+    </div>
+</div>
